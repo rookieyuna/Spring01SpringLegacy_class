@@ -44,9 +44,9 @@ public class HomeController {
 		/*
 		3. 요청을 처리한다.
 			Spring에서는 4가지 영역과 비슷한 Model객체를 사용해서
-			속성을 저장한다. 사용법은 거의 동일하다.
+			속성을 저장한다. 사용법은 거의 동일하다. 모두사용가능!
 			JSP : session/request/pageContext + .setAttribute()/getAttribute()/removeAttribute()
-			Spring : 
+			Spring : model + .addAttribute()
 		 */
 		String firstMessage = "My First Spring MVC 컨트롤러";
 		model.addAttribute("firstMessage", firstMessage);

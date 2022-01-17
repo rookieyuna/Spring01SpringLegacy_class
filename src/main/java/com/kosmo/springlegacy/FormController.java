@@ -54,7 +54,7 @@ public class FormController {
 	}
 	
 	/*
-	폼값받기2] @RequestParam 어노테이션으로 폽값받기
+	폼값받기2] @RequestParam 어노테이션으로 폼값받기
 		파라미터 형식으로 아래와 같이 사용한다. 이와 같이 하면
 		해당 메서드 내에서 변수명을 그대로 사용할 수 있다.
 	 */

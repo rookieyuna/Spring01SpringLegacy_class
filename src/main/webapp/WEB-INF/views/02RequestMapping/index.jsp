@@ -51,6 +51,7 @@
 			
 		}
 	</script>
+	
 	<form action="<%=ctxPath%>/requestMapping/postLogin.do"
 		method="post"
 		name="loginFrm"
