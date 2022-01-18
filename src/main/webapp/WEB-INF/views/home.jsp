@@ -76,6 +76,8 @@
 	</li>
 	
 	
+	<!-- 22/1/18 -->
+	
 	<!-- 컨트롤러 : ValidateController.java -->
 	<h3>폼 데이터 검증하기 - Validator</h3>
 	<li>
