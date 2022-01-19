@@ -132,6 +132,12 @@
 		</a>
 	</li>
 	
+	<li>
+		<a href="./fileUpload/uploadList.do" target="_blank">
+			파일목록보기
+		</a>
+	</li>
+	
 </div>
 </body>
 </html>
