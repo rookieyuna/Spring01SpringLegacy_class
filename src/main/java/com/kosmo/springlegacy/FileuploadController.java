@@ -157,17 +157,24 @@ public class FileuploadController {
 	   String fileName = req.getParameter("fileName");//저장된 파일명
 	   String oriFileName = req.getParameter("oriFileName");//원본 파일명
 	   
+	   //물리적 경로
 	   String saveDirectory = req.getSession().getServletContext().getRealPath("/resources/upload");
 	   
+	   //경로와 파일명을 통해 파일객체 생성
 	   File downloadFile = new File(saveDirectory + "/" + fileName);
 	   
+	   //해당경로에 파일이 없을경우 예외처리
 	   if(!downloadFile.canRead()) {
 		   throw new Exception("파일을 찾을 수 없습니다.");
 	   }
 	   
+	   //다운로드를 위한 View와 Model 처리
 	   ModelAndView mv = new ModelAndView();
+	   //다운로드를 할 View명
 	   mv.setViewName("fileDownloadView");
+	   //저장된 파일의 전체경로명
 	   mv.addObject("downloadFile", downloadFile);
+	   //원본 파일명
 	   mv.addObject("oriFileName", oriFileName);
 	   
 	   return mv;
